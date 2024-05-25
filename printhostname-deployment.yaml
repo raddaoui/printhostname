@@ -17,7 +17,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: debug
-        image: docker.io/raddaoui/printhostname:v2
+        image: docker.io/raddaoui/printhostname:v1
         ports:
         - containerPort: 80
           name: http
