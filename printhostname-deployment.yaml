@@ -4,7 +4,7 @@ metadata:
   name: printhostname
   namespace: printhostname
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: printhostname
@@ -17,7 +17,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: debug
-        image: docker.io/raddaoui/printhostname:v1
+        image: docker.io/raddaoui/printhostname:v2
         ports:
         - containerPort: 80
           name: http
